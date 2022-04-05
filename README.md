@@ -2,6 +2,7 @@
 
 > Backend api to be used with REST FRAMEWORK, tested with frontend [Traveling](https://github.com/JesusPuga/destacame-front)
 - CRUD with driver, passenger, travel, travel_plan, bus and journey
+- ERD.pdf in root path includes the entity relationship diagram
 
 # Prerequisites
 
@@ -35,3 +36,13 @@ Base ROUTES  [http://localhost:8000/api/](http://localhost:8000/api/)
 - Update PATCH  [http://localhost:8000/api/driver/:id](http://localhost:8000/api/driver/:id) 
 - List GET  [http://localhost:8000/api/driver/](http://localhost:8000/api/) 
 - Delete (disable)  DELETE [http://localhost:8000/api/:id/](http://localhost:8000/api/:id/) 
+
+# Assumptions
+
+- The goal of the project is manage the travels in X company, that does not include customers, reports, complex users, etc
+- The system allows to add differents travels
+- Every travel has buses in differents schedules, it means that the bus can be used to go to differents places but not in the same schedule
+- Every bus has just one driver and some passengers in their own seat, that does not mean that the bus can only travel with specific passengers but with differents schedules 
+- The limit of seats in every bus is by default 10
+- Every seat has a number from 1-10, if there is any passenger with a seat reserved it cannot be set again
+- The system can save the data of divers to specific bus, add passenger to travel with specific schedule
