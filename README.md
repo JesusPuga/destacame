@@ -3,6 +3,7 @@
 > Backend api to be used with REST FRAMEWORK, tested with frontend [Traveling](https://github.com/JesusPuga/destacame-front)
 - CRUD with driver, passenger, travel, travel_plan, bus and journey
 - ERD.pdf in root path includes the entity relationship diagram
+- The project includes a file traveling/db.sqlite3 with default data to test the application (it does not need any extra step to be loaded)
 
 # Prerequisites
 
